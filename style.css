@@ -10,25 +10,38 @@ body {
     background-color: #000;
     color: #fff;
     font-size: 16px;
+    overflow: hidden;
+    /*remove scroll*/
 }
 
 
 header img {
     width: 50%;
-    
+
 }
-header  {
+
+header {
     position: fixed;
     left: 50%;
     align-items: center;
     transform: translateX(-50%);
     display: grid;
-    grid-template-columns: 1fr 600px ;
+    grid-template-columns: 1fr 600px;
     gap: 50px;
     width: 90vw;
-    z-index: 2;  <! passa o fundo pra drente!>
-    }
-  nav ul {
+    z-index: 2;
+    /*joga o fundo pra frente*/
+
+}
+
+header img {
+    width: 1000px;
+    /* aumenta a largura da logo */
+    height: auto;
+    /* mantém a proporção */
+}
+
+nav ul {
     display: grid;
     grid-template-columns: repeat(3, 200px);
 
@@ -44,6 +57,50 @@ section {
 }
 
 
-.arrows button img  {
+.arrows button img {
     width: 100px;
 }
+
+.list {
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+section .list .item {
+    position: absolute;
+}
+
+.list .itens {
+
+    position: absolute;
+    inset: 0;
+}
+
+.car-img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.car-img img {
+    width: 100%;
+    transform: rotate(-10deg);
+    /* rotação só na imagem */
+}
+
+    .content {
+        position: absolute;
+        right: 100px;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 20px;
+        
+
+    }
