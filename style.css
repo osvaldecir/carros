@@ -26,7 +26,7 @@ header  {
     grid-template-columns: 1fr 600px ;
     gap: 50px;
     width: 90vw;
-    z-index: 2;
+    z-index: 2;  <! passa o fundo pra drente!>
     }
   nav ul {
     display: grid;
